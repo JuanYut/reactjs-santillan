@@ -17,14 +17,21 @@ Para hacer un desarrollo modular.
 Nos permite separar nuestro codigo en archivos y carpetas, utilizar nmp o yarn como gestor de dependencias.
 Genera archivo unico JS (bundle).
 
-  **Entry:**
-    Indica cual es el punto de entrada donde empieza la aplicacion.
-  **Output:**
-    Indica cual es el punto de salida o los puntos de salida.
-  **Loaders:**
-    Realizan transformaciones en los archivos.
-  **Plugins:**
-    Realizan acciones en los archivos.
+**Entry:**
+
+Indica cual es el punto de entrada donde empieza la aplicacion.
+
+**Output:**
+
+Indica cual es el punto de salida o los puntos de salida.
+
+**Loaders:**
+
+Realizan transformaciones en los archivos.
+
+**Plugins:**
+
+Realizan acciones en los archivos.
 
 **ReactJS**
 
@@ -33,21 +40,28 @@ Genera archivo unico JS (bundle).
 </p>
 
 **Componentes:**
-Un componente en React simplemente es una pieza de UI (user interface), que tiene una funcionalidad independiente definida.
+  Un componente en React simplemente es una pieza de UI (user interface), que tiene una funcionalidad independiente definida.
 
 **Renderizacion > render():**
-    Es el metodo que se encarga de visualizar el codigo HMTL de los componentes React en el navegador.
-    Se llama automaticamente cuando se crea el componente o cuando su estado cambia.
+
+  Es el metodo que se encarga de visualizar el codigo HMTL de los componentes React en el navegador.
+  Se llama automaticamente cuando se crea el componente o cuando su estado cambia.
+
 **Propiedades > props:**
-    Son el mecanismo principal de React para pasar datos de un componente superior (padre) a uno inferior (hijo).
-    Son informacion externa utilizada para definir aspectos del componente.
-    Son INMUTABLES.
-    Un Componente no puede cambiar sus Propiedades, estas quedan fijas durante todo el ciclo de vida del mismo.
-    **+PropTypes:**
-      Los componentes en React estan diseñados para poder agruparlos en componentes mas grandes y ser reutilizados.
-      Por tal es una buena practica definir explicitamente las propiedades que acepta un componente, cuales son requeridas y los tipos de dato de cada una.
-   **+DefaultProps:**
-      Cuando queremos asignar el valor a una propiedad y este no se proporciona, podemos usar el objeto defaultProps.
+
+  Son el mecanismo principal de React para pasar datos de un componente superior (padre) a uno inferior (hijo).
+  Son informacion externa utilizada para definir aspectos del componente.
+  Son INMUTABLES.
+  Un Componente no puede cambiar sus Propiedades, estas quedan fijas durante todo el ciclo de vida del mismo.
+
+  **+PropTypes:**
+    
+    Los componentes en React estan diseñados para poder agruparlos en componentes mas grandes y ser reutilizados.
+    Por tal es una buena practica definir explicitamente las propiedades que acepta un componente, cuales son requeridas y los tipos de dato de cada una.
+
+  **+DefaultProps:**
+    
+    Cuando queremos asignar el valor a una propiedad y este no se proporciona, podemos usar el objeto defaultProps.
 
     Validadores de PropTypes (Especiales)
       PropTypes.node:
