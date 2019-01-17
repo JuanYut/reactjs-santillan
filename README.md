@@ -76,4 +76,18 @@ Realizan acciones en los archivos.
 
 **Estado > state:**
 
+  - Representa como se encuentra un componente en un momento especifico.
+  - Es Mutable.
+  
+  Cada que el estado cambie, el componente se renderizara automaticamente.
+
+  Si queremos cambiar el estado, tenemos a nuestra disposicion el metodo:
+
+  .setState()
+
+  No se Hereda, no tiene herencia, fin.
+
+  Solo el componente tiene la capacidad de modificar su estado, ni el Padre ni los Hijos podran hacerlo.
+  Es muy util para contener datos en el componente, o para enviar informacion a los Hijos en forma de propiedad.
+
 **Eventos > Synthetic Events:**
