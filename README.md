@@ -86,3 +86,16 @@ Realizan acciones en los archivos.
   Es muy util para contener datos en el componente, o para enviar informacion a los Hijos en forma de propiedad.
 
 **Eventos > Synthetic Events:**
+
+- Sirven para modificar el estado del componente.
+- Mientras que las propiedades se pasan de padres a hijos, los eventos se disparan de hijos a padres.
+- Un evento que dispare un hijo, puede capturarlo el padre.
+
+**Autobinding**
+
+- Los componentes declarados como clases ES6, los metodos siguen la misma semantica que las clases. No enlazan automaticamente **this** a la instancia.
+
+**Delegacion de Eventos**
+
+- Los eventos en JSX se nombran con **camelCase**, en vez de lowercase y se pasan como funcion en vez de cadena.
+- React no genera manejadores de eventos por cada nodo. Cuando arranca, escucha todos los eventos en el nivel superior con un simple listener.
