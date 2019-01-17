@@ -1,0 +1,10 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #1E1E1E;
+  color: white;
+}
+
+img { max-width: 80%; }
+
+.title { color: #61DAFB; }
