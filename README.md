@@ -130,3 +130,17 @@ Ventajas de esto:
 - Se mejora el rendimiento de la aplicacion.
 - La aplicacion es mas facil de entender.
 
+**Componente con JSX y ES6**
+
+`class MyComponentStateful extends React.Component {
+    constructor (...props) {
+        super(...props)
+        this.state = {...}
+    }
+    render() {...}
+}
+
+MyComponentStateful.propTypes = {...}
+MyComponentStateful.defaultProps = {...}
+
+const MyComponentStateless = (...props) => {}`
