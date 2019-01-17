@@ -132,7 +132,7 @@ Ventajas de esto:
 
 **Componente con JSX y ES6**
 
-`class MyComponentStateful extends React.Component {
+```class MyComponentStateful extends React.Component {
     constructor (...props) {
         super(...props)
         this.state = {...}
@@ -143,4 +143,4 @@ Ventajas de esto:
 MyComponentStateful.propTypes = {...}
 MyComponentStateful.defaultProps = {...}
 
-const MyComponentStateless = (...props) => {}`
+const MyComponentStateless = (...props) => {}```
