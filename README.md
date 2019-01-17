@@ -99,3 +99,34 @@ Realizan acciones en los archivos.
 
 - Los eventos en JSX se nombran con **camelCase**, en vez de lowercase y se pasan como funcion en vez de cadena.
 - React no genera manejadores de eventos por cada nodo. Cuando arranca, escucha todos los eventos en el nivel superior con un simple listener.
+
+**Tipos de Componentes**
+
+**Staless**
+
+- Los componentes de presentacion se limitan a mostrar datos y no tienen estado.
+- Es preferible que la mayoria de los componentes de una aplicacion sean de este tipo porque son mas faciles de manejar.
+- Orientados al aspecto visual.
+- No tienen dependencia con fuentes de datos.
+- Reciben callbacks por medio de props.
+- Pueden ser escritos como componentes funcionales.
+- No tienen estado, monkaS.
+
+**Stateful**
+
+- Los componentes contenedores encapsulan a otros componentes y proporcionan propiedades, ademas se encargan de manejar el estado de la aplicacion.
+- Orientados al funcionamiento de la aplicacion.
+- Se comunican con las fuentes de datos.
+- Contienen componentes de presentacion u otros contenedores.
+- Tienen estado, monkaS.
+
+**Stateless vs Stateful**
+
+Ventajas de esto:
+
+- Favorece la separacion de responsabilidades, cada componente debe tener una unica tarea.
+- Al tener la logica de estado y los elementos visuales por separado es mas facil reutilizar los componentes.
+- Se simplifica la tarea de hacer pruebas unitarias.
+- Se mejora el rendimiento de la aplicacion.
+- La aplicacion es mas facil de entender.
+
