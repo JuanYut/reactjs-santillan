@@ -40,6 +40,7 @@ Realizan acciones en los archivos.
 </p>
 
 **Componentes:**
+
   Un componente en React simplemente es una pieza de UI (user interface), que tiene una funcionalidad independiente definida.
 
 **Renderizacion > render():**
@@ -56,8 +57,8 @@ Realizan acciones en los archivos.
 
   **+PropTypes:**
     
-    Los componentes en React estan diseñados para poder agruparlos en componentes mas grandes y ser reutilizados.
-    Por tal es una buena practica definir explicitamente las propiedades que acepta un componente, cuales son requeridas y los tipos de dato de cada una.
+  Los componentes en React estan diseñados para poder agruparlos en componentes mas grandes y ser reutilizados.
+  Por tal es una buena practica definir explicitamente las propiedades que acepta un componente, cuales son requeridas y los tipos de dato de cada una.
 
   **+DefaultProps:**
     
