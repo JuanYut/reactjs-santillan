@@ -192,3 +192,20 @@ const MyComponentStateless = (...props) => {}
 **componentWillUnmount(prevProps, prevState)**
 
 - Se ejecuta justo antes que el componente se elimine del DOM. Especialmente util para limpiar eventos asignados a las referencias del DOM del componente, eliminar timers y limpiar observadores.
+
+**Componentes Dinamicos**
+
+Componentes que renderizan componentes totalmente diferentes segun el estado o las propiedades asignadas.
+
+- Utiles para renderizar:
+- Un componente para cuando no tenemos resultados y otro para cuando si.
+- Un componente para indicar que estamos cargando el contenido.
+- Una lista de componentes.
+
+**Anidamiento de Vistas**
+
+- Es muy facil crear estructuras anidadas con React.
+- Ventajas:
+- Codigo mas limpio.
+- Reutilizar el maximo codigo posible.
+- Convertir estructuras complejas en mas sencillas y reutilizables.
