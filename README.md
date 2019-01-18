@@ -148,3 +148,13 @@ const MyComponentStateless = (...props) => {}
 ```
 
 **Mas de los componentes**
+
+**Ciclo de vida de los componentes**
+
+- Casi todos los componentes de React tienen un ciclo de vida.
+- Montaje, Actualizacion y Desmontaje.
+- Ofrecen puntos de captura para ejecutar codigo en cada etapa.
+
+<p align="center">
+  <img src="/imgReadme/cicloComponentesReact.png"  height="300"/>
+</p>
