@@ -156,5 +156,14 @@ const MyComponentStateless = (...props) => {}
 - Ofrecen puntos de captura para ejecutar codigo en cada etapa.
 
 <p align="center">
-  <img src="/imgReadme/cicloComponentesReact.png"  height="300"/>
+  <img src="/imgReadme/cicloComponentesReact.png"  height="200"/>
 </p>
+
+**componentWillMount()**
+
+- Se ejecuta una vez, tanto en cliente como servidor, inmediatamente antes del primer render(). Si usas setState en este metodo, render() se ejecutara una vez a pesar de haber disparado un cambio de estado.
+
+**componentDidMount()**
+
+- Se ejecuta una vez, solo en cliente, inmediatamente despues del primer render(). Las referencias en el DOM ya existen y es el lugar ideal para hacer peticiones AJAX, integrar lirerias externas, crear eventos, poner timers, etc.
+- El componentDidMount() de los hijos sera ejecutado antes que el del padre.
