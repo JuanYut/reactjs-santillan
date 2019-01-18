@@ -159,6 +159,8 @@ const MyComponentStateless = (...props) => {}
   <img src="/imgReadme/cicloComponentesReact.png"  height="200"/>
 </p>
 
+**Primer renderizado**
+
 **componentWillMount()**
 
 - Se ejecuta una vez, tanto en cliente como servidor, inmediatamente antes del primer render(). Si usas setState en este metodo, render() se ejecutara una vez a pesar de haber disparado un cambio de estado.
@@ -167,3 +169,26 @@ const MyComponentStateless = (...props) => {}
 
 - Se ejecuta una vez, solo en cliente, inmediatamente despues del primer render(). Las referencias en el DOM ya existen y es el lugar ideal para hacer peticiones AJAX, integrar lirerias externas, crear eventos, poner timers, etc.
 - El componentDidMount() de los hijos sera ejecutado antes que el del padre.
+
+**Cambios de las propiedades (Fase de actualizacion)**
+
+**componentWillReceiveProps(nextProps)**
+
+- Se ejecuta cuando el componente reciba nuevas propiedades. No se ejecuta con el primer render().
+- Esta funcion recibe como parametro las nuevas propiedades, muy util para hacer comparaciones y actualizar el estado segun las propiedades.
+
+**shouldComponentUpdate(nextProps, nextState)**
+
+- Se ejecuta justo antes de volver a renderizare con las nuevas props y estado. No se ejecuta con el primer render().
+- Esta funcion recibe como parametro las nuevas propiedades y el nuevo estado siempre debe devolver un valor booleano. Por defecto siempre devuelve true.
+
+**componentDidUpdate(prevProps, prevState)**
+
+- Se ejecuta justo despues de renderizarse. No se ejecuta con el primer render(). Recibe como parametro las propiedades y estados anteriores.
+- Este es un buen lugar para trabajar con el DOM del componente, porque en este punto tenemos todos los cambios representados con el nuevo render().
+
+**Componente se desmonta (Fase de desmontaje)**
+
+**componentWillUnmount(prevProps, prevState)**
+
+- Se ejecuta justo antes que el componente se elimine del DOM. Especialmente util para limpiar eventos asignados a las referencias del DOM del componente, eliminar timers y limpiar observadores.
