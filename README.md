@@ -205,7 +205,9 @@ Componentes que renderizan componentes totalmente diferentes segun el estado o l
 **Anidamiento de Vistas**
 
 - Es muy facil crear estructuras anidadas con React.
-- Ventajas:
+
+Ventajas:
+
 - Codigo mas limpio.
 - Reutilizar el maximo codigo posible.
 - Convertir estructuras complejas en mas sencillas y reutilizables.

@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react'
+import uid from 'uid'
+import { courses } from '../data/courses'
 import CoursesList from './CoursesList'
 import CourseAddForm from './CourseAddForm'
 import './index.css'
@@ -8,10 +10,7 @@ class App extends Component {
     super(...props)
 
     this.state = {
-      courses: [
-        {id: 1, name: 'React desde cero', teacher: 'Jon Mircha'},
-        {id: 2, name: 'CSS desde cero', teacher: 'Emiliano Zapata'}
-      ]
+      courses: []
     }
 
     // bindeo
@@ -52,6 +51,7 @@ App.propTypes = {
   // teacher: PropTypes.string.isRequired
 }
 App.defaultProps = {
+  id: uid(10),
   name: 'Curso Desconocido',
   teacher: 'Profesor No Asignado'
 }
