@@ -146,3 +146,5 @@ MyComponentStateful.defaultProps = {...}
 
 const MyComponentStateless = (...props) => {}
 ```
+
+**Mas de los componentes**
